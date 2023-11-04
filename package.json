@@ -1,6 +1,9 @@
 {
-  "name": "typescript",
+  "name": "untransulate-api",
   "version": "0.0.0",
   "private": true,
-  "dependencies": {}
+  "dependencies": {
+    "@types/google-apps-script": "^1.0.76",
+    "typescript": "^5.2.2"
+  }
 }
