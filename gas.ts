@@ -677,6 +677,8 @@ class OkAutoUntransulate implements OkData {
 //#endregion
 
 function doGet(e: GoogleAppsScript.Events.DoGet) {
+    if (e.parameter.data === undefined) return returnData(new ErrorData("data is undefined"))
+    
     const data = JSON.parse(e.parameter.data) as RequestData
 
     if (data === undefined) return returnData(new ErrorData("data is undefined"))
