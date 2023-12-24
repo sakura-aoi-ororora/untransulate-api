@@ -1,9 +1,12 @@
 {
   "name": "untransulate-api",
   "version": "0.0.0",
-  "private": true,
+  "scripts": {
+    "build": "tsc && esbuild build/mod.js --bundle --outdir=lib --minify"
+  },
   "devDependencies": {
     "@types/google-apps-script": "^1.0.76",
+    "esbuild": "0.19.10",
     "typescript": "^5.2.2"
   }
 }

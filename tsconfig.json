@@ -1,7 +1,9 @@
 {
   "compilerOptions": {
     "target": "ES5",
+    "module": "ESNext",
     "strict": true,
-    "noFallthroughCasesInSwitch": true
+    "noFallthroughCasesInSwitch": true,
+    "outDir": "./build"
   }
 }
